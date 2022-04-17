@@ -1,0 +1,19 @@
+.main-page {
+    width: 100vw;
+    height: 840px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    display: block;
+    padding-top: 286px;
+    margin-bottom: 70px;
+    .main-page-title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 49px;
+        color: #FFFFFF;
+        max-width: 887px;
+        margin-bottom: 29px;
+    }
+}

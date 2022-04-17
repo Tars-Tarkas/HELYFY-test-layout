@@ -2,3 +2,52 @@
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
+.wrap {
+    max-width: 1175px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header {
+    padding-top: 39px;
+    padding-bottom: 38px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+    }
+    p:last-of-type {
+        color: $text;
+    }
+    img {
+        padding-right: 39px;
+    }
+}
+
+.footer {
+    background-color: #FAF9F8;
+    height: 77px;
+    padding-top: 3px;
+}
+
+.footer-text {
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+        text-align: center;
+    }
+}
