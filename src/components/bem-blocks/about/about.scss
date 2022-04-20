@@ -1,0 +1,99 @@
+.about-block {
+    padding-top: 37px;
+}
+
+.about-block-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: $title;
+    margin-bottom: 14px;
+}
+
+.about-text {
+    width: 584px;
+    max-width: 584px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $title;
+    >p {
+        margin: 0;
+        -webkit-line-clamp: 7;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.showMoreText {
+    -webkit-line-clamp: 100;
+}
+
+.about-block-text {
+    button {
+        margin-bottom: 40px;
+        background-color: transparent;
+        color: $blue;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23px;
+        padding-right: 9px;
+        position: relative;
+         ::after {
+            position: absolute;
+            content: url('../img/arrow.svg');
+        }
+    }
+}
+
+.about-block-author {
+    display: flex;
+    padding-right: 112px;
+    img {
+        width: 31px;
+        height: 27px;
+    }
+}
+
+.author {
+    margin-top: 31px;
+    text-align: center;
+    img {
+        margin-bottom: 23px;
+        width: 139px;
+        height: 139px;
+    }
+}
+
+.author-fio {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $title;
+    margin-bottom: 7px;
+}
+
+.author-prof {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $title;
+    margin-bottom: 11px;
+}
+
+.author-show {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: $blue;
+    max-width: 200px;
+}
