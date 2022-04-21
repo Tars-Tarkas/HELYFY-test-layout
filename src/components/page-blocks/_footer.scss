@@ -1,0 +1,30 @@
+.footer-text {
+    background-color: #FAF9F8;
+    height: 77px;
+    padding-top: 3px;
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+        text-align: center;
+    }
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    .footer-logo>img {
+        width: 129px;
+        height: 23px;
+    }
+}
+
+.footer-social-lang {
+    display: flex;
+    align-items: center;
+    .footer-social>a {
+        padding-right: 30px;
+    }
+}

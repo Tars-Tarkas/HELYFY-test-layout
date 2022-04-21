@@ -1,0 +1,24 @@
+.header {
+    padding-top: 39px;
+    padding-bottom: 38px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    p {
+        font-size: 14px;
+        line-height: 17px;
+        color: $grey;
+    }
+    P:first-of-type {
+        padding-left: 39px;
+    }
+    p:last-of-type {
+        color: $text;
+    }
+    .header-logo>img {
+        width: 129px;
+        height: 23px;
+    }
+}
