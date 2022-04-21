@@ -1,0 +1,83 @@
+.map-block {
+    position: relative;
+}
+
+.map-block-card {
+    top: 20px;
+    position: absolute;
+    padding-top: 51px;
+    padding-left: 32px;
+    padding-bottom: 58px;
+    background-color: #ffffff;
+    border: 1px solid #C7C7C7;
+    min-width: 420px;
+}
+
+.card-item {
+    display: flex;
+    margin-bottom: 34px;
+}
+
+.card-item-num {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: $orange;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 61px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.card-item-description {
+    padding-left: 18px;
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: $title;
+    }
+    p:last-child {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $title;
+    }
+}
+
+.map-block-author {
+    .author {
+        display: flex;
+        text-align: left;
+    }
+    .author img {
+        width: 61px;
+        height: 61px;
+        margin-bottom: 0;
+    }
+    .author-fio {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 0;
+    }
+    .author-prof {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+    .author-show {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0;
+    }
+    .author-description {
+        padding-left: 18px;
+        >p {
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.shooting-time-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    columns: $title;
+    max-width: 230px;
+}
+
+.shooting-time-calendar {
+    display: flex;
+    align-items: center;
+    max-width: 770px;
+    height: 74px;
+    border: 0.5px solid $grey;
+    padding-left: 30px;
+    p {
+        padding-right: 14px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        >.date-time {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}
+
+.shooting-time-place {
+    display: flex;
+}
+
+.shooting-time-place {
+    max-width: 770px;
+    border: 0.5px solid $grey;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        color: $title;
+    }
+    .place-time {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 17px;
+    }
+    .place-price {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 13px;
+    }
+    .place-count {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

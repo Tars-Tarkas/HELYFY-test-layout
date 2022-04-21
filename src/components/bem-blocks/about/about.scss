@@ -5,6 +5,7 @@
 .about-block-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-title {
@@ -51,49 +52,4 @@
             content: url('../img/arrow.svg');
         }
     }
-}
-
-.about-block-author {
-    display: flex;
-    padding-right: 112px;
-    img {
-        width: 31px;
-        height: 27px;
-    }
-}
-
-.author {
-    margin-top: 31px;
-    text-align: center;
-    img {
-        margin-bottom: 23px;
-        width: 139px;
-        height: 139px;
-    }
-}
-
-.author-fio {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: $title;
-    margin-bottom: 7px;
-}
-
-.author-prof {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: $title;
-    margin-bottom: 11px;
-}
-
-.author-show {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
-    color: $blue;
-    max-width: 200px;
 }
