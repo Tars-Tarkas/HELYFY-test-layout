@@ -1,4 +1,17 @@
 .block-photo-feedback {
     display: flex;
     align-items: center;
+    img:nth-child(1) {
+        margin-right: 10px;
+    }
+    P {
+        margin-right: 14px;
+    }
+    .photo-feedback-star {
+        img {
+            width: 18px;
+            height: 17px;
+            margin-right: 7px;
+        }
+    }
 }

@@ -38,7 +38,7 @@
 }
 
 .about-block-text {
-    button {
+    .moretext-btn {
         margin-bottom: 40px;
         background-color: transparent;
         color: $blue;
@@ -47,6 +47,7 @@
         line-height: 23px;
         padding-right: 9px;
         position: relative;
+        cursor: pointer;
          ::after {
             position: absolute;
             content: url('../img/arrow.svg');

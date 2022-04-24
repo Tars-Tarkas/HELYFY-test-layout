@@ -1,7 +1,6 @@
 let changetext = document.getElementsByClassName('moretext-btn');
 for (var i = 0; i < changetext.length; i++) {
     changetext[i].addEventListener('click', changeClassOne, false);
-    changetext[i].addEventListener('click', changeClassTwo, false);
 }
 
 function changeClassOne() {

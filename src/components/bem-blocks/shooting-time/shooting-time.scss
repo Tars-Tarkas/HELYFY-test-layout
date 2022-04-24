@@ -4,6 +4,7 @@
     line-height: 29px;
     columns: $title;
     max-width: 230px;
+    margin-bottom: 30px;
 }
 
 .shooting-time-calendar {
@@ -32,7 +33,7 @@
     display: flex;
 }
 
-.shooting-time-place {
+.shooting-time-place1 {
     max-width: 770px;
     border: 0.5px solid $grey;
     padding-left: 30px;
@@ -45,22 +46,49 @@
     p {
         color: $title;
     }
-    .place-time {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-        margin-bottom: 17px;
-    }
-    .place-price {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 13px;
-    }
-    .place-count {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 26px;
-    }
+}
+
+.place-time {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 17px;
+}
+
+.place-price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 13px;
+}
+
+.place-count {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.shooting-time-place2 {
+    max-width: 770px;
+    border-top: 0.5px solid $grey;
+    border-right: 0.5px solid $grey;
+    border-left: 0.5px solid $grey;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.shoting-time-feedback {
+    max-width: 770px;
+    margin-bottom: 82px;
+    border-bottom: 0.5px solid $grey;
+    border-right: 0.5px solid $grey;
+    border-left: 0.5px solid $grey;
+    padding-bottom: 48px;
+    padding-left: 30px;
 }
