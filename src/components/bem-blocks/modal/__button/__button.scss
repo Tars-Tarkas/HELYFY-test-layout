@@ -1,0 +1,20 @@
+.button-block {
+    button {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.modal-button {
+    max-width: 390px;
+    height: 72px;
+    width: 100%;
+    color: #ffffff;
+    background: $orange;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.modal-button_disable {
+    color: $grey;
+}

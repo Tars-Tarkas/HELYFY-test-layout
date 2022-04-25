@@ -1,0 +1,44 @@
+.modal-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 20;
+    transition: .3s all;
+    position: fixed;
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    max-width: 615px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    transition: 0.3s all;
+    z-index: 30;
+    background-color: #ffffff;
+    padding-left: 96px;
+    padding-top: 61px;
+    padding-right: 99px;
+    padding-bottom: 61px;
+    .modal-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        color: $title;
+        margin-bottom: 31px;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    cursor: pointer;
+}

@@ -27,7 +27,45 @@
     </div>
 </header>
     <main class="main">
-        <div class="main-page" style="background-image: url(img/background-1.jpg);">
+        <form class="modal">
+    <p class="modal-title">Бронирование</p>
+    <div class="input-data-block">
+    <p class="input-data-title">Дата<span class="data-">*</span></p>
+    <input class="input-data" type="date">
+</div> <div class="input-email-block">
+    <p class="input-email-title">Email*</p>
+    <input class="input-email" type="email" placeholder="Электронная почта">
+</div> <div class="input-fistname-block">
+    <p class="input-fistname-title">Имя*</p>
+    <input class="input-firstname" type="text">
+</div> <div class="input-lastname-block">
+    <p class="input-lastname-title">Фамилия*</p>
+    <input class="input-lastname" type="text">
+</div><div class="input-phone-block">
+    <p class="input-phone-title">Телефон*</p>
+    <input class="input-phone" type="tel" placeholder="+7 (905) 184-81-40">
+</div>
+    <div class="input-card-block">
+    <p class="input-card-title">Данные карты*</p>
+    <input class="input-card-num" type="text" placeholder="Номер карты">
+    <div class="card-data-cvv">
+        <input type="text" class="input-card-data" placeholder="Срок действия">
+        <input type="text" class="input-card-cvv" placeholder="CVV">
+    </div>
+</div> <div class="ckeckbox-block">
+    <input class="modal-checkbox" type="checkbox" id="modal-checkbox" name="modal-checkbox">
+    <label class="checkbox-title" for="modal-checkbox">Я согласен с пользовательским соглашением и публичной офертой</label>
+</div><div class="button-block">
+    <button class="modal-button">Забронировать</button>
+</div>
+    <div class="modal-close">
+        <img src="img/icon-close.svg" alt="">
+    </div>
+</form>
+
+<div class="modal-overlay">
+
+</div> <div class="main-page" style="background-image: url(img/background-1.jpg);">
     <div class="wrap">
         <p class="main-page-title">Эксклюзивная <span class="orange-txt">фотосессия</span> при полете на вертолете</p>
         <div class="__button-price">
@@ -169,7 +207,7 @@
             </div>
             <div class="about-block-author">
                 <div class="author">
-    <img src="../img/author.png" alt="">
+    <img src="img/author.png" alt="">
     <div class="author-description">
         <p class="author-fio">Марина Иванова</p>
         <p class="author-prof">Фотограф</p>
@@ -223,7 +261,8 @@
 
 
     </div>
-</div> <div class="map-block">
+</div>
+        <div class="map-block">
     <div class="map-block-include">
         <div id="y-map" style="width: 100%; height: 510px;"></div>
         <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A89753131d864e96e3b2c8548e2934dedb80058119425f134790dce07971d390b&amp;width=100%25&amp;height=509&amp;lang=ru_RU&amp;scroll=true"></script> -->
@@ -254,7 +293,7 @@
             </div>
             <div class="map-block-author">
                 <div class="author">
-    <img src="../img/author.png" alt="">
+    <img src="img/author.png" alt="">
     <div class="author-description">
         <p class="author-fio">Марина Иванова</p>
         <p class="author-prof">Фотограф</p>
@@ -266,8 +305,7 @@
 
     </div>
 
-</div>
-        <div class="wrap">
+</div> <div class="wrap">
     <div class="reviews-block">
         <p class="reviews-block-title">Отзывы:</p>
     </div>
