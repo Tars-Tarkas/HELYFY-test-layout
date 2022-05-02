@@ -30,40 +30,40 @@
         <form class="modal">
     <p class="modal-title">Бронирование</p>
     <div class="input-data-block">
-    <p class="input-data-title">Дата<span class="data-">*</span></p>
-    <input class="input-data" type="date">
+    <p class="input-data-title">Дата<span class="data-span">*</span></p>
+    <input class="input-data" type="date" required>
 </div> <div class="input-email-block">
-    <p class="input-email-title">Email*</p>
-    <input class="input-email" type="email" placeholder="Электронная почта">
+    <p class="input-email-title">Email<span class="email-span">*</span></p>
+    <input class="input-email" type="email" placeholder="Электронная почта" required>
 </div> <div class="input-fistname-block">
-    <p class="input-fistname-title">Имя*</p>
-    <input class="input-firstname" type="text">
+    <p class="input-fistname-title">Имя<span class="fistname-span">*</span></p>
+    <input class="input-firstname" type="text" required>
 </div> <div class="input-lastname-block">
-    <p class="input-lastname-title">Фамилия*</p>
-    <input class="input-lastname" type="text">
+    <p class="input-lastname-title">Фамилия<span class="lastname-span">*</span></p>
+    <input class="input-lastname" type="text" required>
 </div><div class="input-phone-block">
-    <p class="input-phone-title">Телефон*</p>
-    <input class="input-phone" type="tel" placeholder="+7 (905) 184-81-40">
+    <p class="input-phone-title">Телефон<span class="phone-span">*</span></p>
+    <input class="input-phone" type="tel" placeholder="+7 (905) 184-81-40" required>
 </div>
     <div class="input-card-block">
-    <p class="input-card-title">Данные карты*</p>
-    <input class="input-card-num" type="text" placeholder="Номер карты">
+    <p class="input-card-title">Данные карты<span class="card-span">*</span></p>
+    <input class="input-card-num" type="text" placeholder="Номер карты" required>
     <div class="card-data-cvv">
-        <input type="text" class="input-card-data" placeholder="Срок действия">
-        <input type="text" class="input-card-cvv" placeholder="CVV">
+        <input type="text" class="input-card-data" placeholder="Срок действия" required>
+        <input type="text" class="input-card-cvv" placeholder="CVV" required>
     </div>
 </div> <div class="ckeckbox-block">
-    <input class="modal-checkbox" type="checkbox" id="modal-checkbox" name="modal-checkbox">
+    <input class="modal-checkbox" type="checkbox" id="modal-checkbox" name="modal-checkbox" required>
     <label class="checkbox-title" for="modal-checkbox">Я согласен с пользовательским соглашением и публичной офертой</label>
 </div><div class="button-block">
-    <button class="modal-button">Забронировать</button>
+    <button id="modalBtn" disabled class="modal-button">Забронировать</button>
 </div>
     <div class="modal-close">
-        <img src="img/icon-close.svg" alt="">
+        <img id="closeBtn" src="img/icon-close.svg" alt="">
     </div>
 </form>
 
-<div class="modal-overlay">
+<div class="modal-overlay" id="modalOverlay">
 
 </div> <div class="main-page" style="background-image: url(img/background-1.jpg);">
     <div class="wrap">
@@ -78,7 +78,7 @@
             <img src="../img/price-discount.svg" alt="">
         </div>
     </div>
-</div> <button class="__button-booking">Забронировать место</button>
+</div> <button id="btnBooking" class="button-booking">Забронировать место</button>
     </div>
 </div> <div class="block-photo">
     <div class="wrap">

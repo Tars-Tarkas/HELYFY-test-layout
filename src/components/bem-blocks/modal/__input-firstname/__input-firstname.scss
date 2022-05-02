@@ -18,6 +18,9 @@
 }
 
 .input-fistname-block {
+    .fistname-span {
+        color: $orange;
+    }
     input :active,
      :hover,
      :focus {

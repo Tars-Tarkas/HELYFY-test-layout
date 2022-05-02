@@ -38,6 +38,9 @@
 }
 
 .input-card-block {
+    .card-span {
+        color: $orange;
+    }
     margin-bottom: 34px;
     >input :active,
      :hover,

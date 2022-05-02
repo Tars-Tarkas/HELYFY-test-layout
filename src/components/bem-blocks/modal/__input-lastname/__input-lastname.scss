@@ -18,6 +18,9 @@
 }
 
 .input-lastname-block {
+    .lastname-span {
+        color: $orange;
+    }
     input :active,
      :hover,
      :focus {

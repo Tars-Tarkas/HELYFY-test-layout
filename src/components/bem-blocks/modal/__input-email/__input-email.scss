@@ -18,6 +18,9 @@
 }
 
 .input-email-block {
+    .email-span {
+        color: $orange;
+    }
     input :active,
      :hover,
      :focus {

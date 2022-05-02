@@ -3,6 +3,11 @@
         margin: 0 auto;
         display: block;
     }
+    button[disabled],
+    button:disabled {
+        background-color: $grey;
+        cursor: not-allowed;
+    }
 }
 
 .modal-button {

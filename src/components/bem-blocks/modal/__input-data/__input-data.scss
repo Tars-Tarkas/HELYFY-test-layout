@@ -18,6 +18,9 @@
 }
 
 .input-data-block {
+    .data-span {
+        color: $orange;
+    }
     input :active,
      :hover,
      :focus {

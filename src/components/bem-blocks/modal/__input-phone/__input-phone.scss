@@ -18,6 +18,9 @@
 }
 
 .input-phone-block {
+    .phone-span {
+        color: $orange;
+    }
     input :active,
      :hover,
      :focus {
