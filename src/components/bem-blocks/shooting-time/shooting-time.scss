@@ -8,6 +8,7 @@
 }
 
 .shooting-time-calendar {
+    position: relative;
     display: flex;
     align-items: center;
     max-width: 770px;
@@ -26,6 +27,29 @@
             font-size: 18px;
             line-height: 26px;
         }
+    }
+    .btn-calendar {
+        cursor: pointer;
+    }
+    .datepicker {
+        top: 37px;
+        right: 0;
+        cursor: pointer;
+    }
+    .datepicker-block {
+        position: relative;
+    }
+    input {
+        height: 35px;
+        max-width: 320px;
+        border: 0;
+        background: url("../img/icon-calendar.svg") no-repeat 96% 50%;
+    }
+    input :active,
+     :hover,
+     :focus {
+        outline: 0;
+        outline-offset: 0;
     }
 }
 

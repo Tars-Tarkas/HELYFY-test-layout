@@ -9,8 +9,9 @@
     <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
     <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/SimpleStarRating.css">
     <title>HELYFY</title>
 </head>
 
@@ -31,7 +32,7 @@
     <p class="modal-title">Бронирование</p>
     <div class="input-data-block">
     <p class="input-data-title">Дата<span class="data-span">*</span></p>
-    <input class="input-data" type="date" required>
+    <input class="input-data" type="text" required>
 </div> <div class="input-email-block">
     <p class="input-email-title">Email<span class="email-span">*</span></p>
     <input class="input-email" type="email" placeholder="Электронная почта" required>
@@ -223,9 +224,10 @@
         <p class="shooting-time-title">Доступная съемка в ближайшее время:</p>
 
         <div class="shooting-time-calendar">
-            <p class="calendar-date">Пятница,
-                <span class="date-time">14</span> сентября</p>
-            <img src="img/icon-calendar.svg" alt="">
+            <div class="datepicker-block">
+                <input readonly class="datepicker"></input>
+            </div>
+
         </div>
 
         <div class="shooting-time-place1">
@@ -424,12 +426,12 @@
         <p>Тех. поддержка: 8(800)700-00-00</p>
         <p>© 2018 HELYFLY. All Rights Reserved.</p>
     </div>
-</footer> <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7eb8dc71-1236-4389-be6d-c83deeb49c9f" type="text/javascript"></script>
-<script src="js/libs.min.js"></script>
+</footer> <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="js/air-datepicker.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7eb8dc71-1236-4389-be6d-c83deeb49c9f" type="text/javascript"></script>
+<script type="module" src="js/libs.min.js" type="text/javascript"></script>
 <script src="js/main.min.js"></script>
 
-
-    <script src="js/SimpleStarRating.js"></script>
 </body>
 
 </html>
