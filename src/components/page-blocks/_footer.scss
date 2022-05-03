@@ -1,19 +1,34 @@
-.footer-text {
+.footer-bottom {
     background-color: #FAF9F8;
     height: 77px;
-    padding-top: 3px;
-    p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: $grey;
-        text-align: center;
+    padding-top: 11px;
+    .footer-icon-card {
+        img {
+            width: 39px;
+            height: 25px;
+        }
+        img:last-child {
+            margin-left: 20px;
+            width: 39px;
+            height: 27px;
+        }
+    }
+    .footer-text {
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: $grey;
+            text-align: center;
+        }
     }
 }
 
 .footer-block {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
     height: 100px;
     .footer-logo>img {
         width: 129px;
@@ -27,4 +42,38 @@
     .footer-social>a {
         padding-right: 30px;
     }
+    .select-lang {
+        width: 40px;
+        position: relative;
+        display: inline-block;
+        border: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: $title;
+    }
+    .select-lang:after {
+        font-size: 12px;
+        position: absolute;
+        z-index: 1;
+        text-align: center;
+        pointer-events: none;
+    }
+    select {
+        background: url("../img/arrow.svg") 98% 50% no-repeat;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    select :active,
+     :hover,
+     :focus {
+        outline: 0;
+        outline-offset: 0;
+    }
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
 }
