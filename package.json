@@ -8,7 +8,8 @@
         "php": "gulp dev_php",
         "build": "gulp libs_style && gulp svg_css && gulp ttf && gulp fonts && gulp style && gulp libs_js && gulp build_js && gulp rastr && gulp webp && gulp svg_sprite && gulp html && gulp php",
         "ftp": "gulp deploy",
-        "build-ftp": "npm run build && npm run ftp"
+        "build-ftp": "npm run build && npm run ftp",
+        "deploy": "gh-pages -d build"
     },
     "author": "Molodyk Andrey",
     "license": "ISC",
@@ -17,7 +18,6 @@
         "@babel/core": "^7.16.7",
         "@babel/node": "^7.16.7",
         "@babel/preset-env": "^7.16.7",
-        "@fortawesome/fontawesome-free": "^5.15.4",
         "browser-sync": "^2.26.14",
         "browserify": "^17.0.0",
         "chalk": "^4.1.1",
@@ -40,6 +40,7 @@
         "gulp-svg-css-pseudo": "^1.0.4",
         "gulp-svg-sprite": "^1.5.0",
         "gulp-svgmin": "^3.0.0",
+        "gulp-ttf2eot": "^1.1.2",
         "gulp-ttf2woff": "^1.1.1",
         "gulp-ttftowoff2": "^1.0.1",
         "gulp-uglify-es": "^3.0.0",
@@ -51,8 +52,6 @@
         "jquery-migrate": "^1.2.1",
         "jquery-ui": "^1.13.1",
         "jquery.maskedinput": "^1.4.1",
-        "material-design-icons": "^3.0.1",
-        "paginationjs": "^2.1.5",
         "require-dir": "^1.2.0",
         "sass": "^1.50.0",
         "slick-slider": "^1.8.2",
@@ -60,6 +59,7 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
-        "air-datepicker": "^3.1.1"
+        "air-datepicker": "^3.1.1",
+        "swiper": "^8.1.4"
     }
 }
