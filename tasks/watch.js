@@ -4,7 +4,7 @@ const {
   series
 } = require('gulp');
 
-module.exports = function watching() {
+module.exports = async function watching() {
   watch('src/**/*.html', parallel('html'));
   watch('src/**/*.php', parallel('php'));
   watch('src/**/*.scss', parallel('style'));

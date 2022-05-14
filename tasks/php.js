@@ -5,7 +5,7 @@ const {
 const include = require('gulp-file-include');
 const bs = require('browser-sync');
 
-module.exports = function php() {
+module.exports = async function php() {
 	return src('src/**/*.php')
 		.pipe(include())
 		.pipe(dest('build'))

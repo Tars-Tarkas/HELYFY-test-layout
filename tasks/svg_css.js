@@ -5,7 +5,7 @@ const {
 const svgmin = require('gulp-svgmin');
 const svgCss = require('gulp-svg-css-pseudo');
 
-module.exports = function svg_css() {
+module.exports = async function svg_css() {
 	return src('src/svg/css/**/*.svg')
 		.pipe(svgmin({
 			plugins: [{

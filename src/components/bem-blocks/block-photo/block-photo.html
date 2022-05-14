@@ -42,11 +42,12 @@
 
                 <hr class="block-photo-hr">
             </div>
-            <div class="block-photo-video">
-                <div>
-                    <img src="img/photo/photo-player.jpg" alt="">
+            <div class="block-video">
+                <a id="playBtn" class="youtube-btn"></a>
+                <img id="video-preview" src="img/photo/photo-player.jpg" alt="">
+                <div id="player-block" class="youtube-player">
+                    <iframe id="Yplayer" src="https://www.youtube.com/embed/UALhvLWsdZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="block-photo-video-btn"></div>
             </div>
         </div>
     </div>
@@ -55,7 +56,7 @@
 <div class="block-photo-gallery">
     <div class="wrap">
         <p class="block-photo-gallery-title">Фотографии пакета:</p>
-        <div class="photo-gallery-item">
+        <div class="photo-gallery-item slider">
             <img class="photo-gallery photo-hidden" src="img/photo/01.jpg" alt="">
             <img class="photo-gallery photo-hidden" src="img/photo/02.jpg" alt="">
             <img class="photo-gallery photo-hidden" src="img/photo/03.jpg" alt="">

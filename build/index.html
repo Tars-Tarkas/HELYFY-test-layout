@@ -8,9 +8,8 @@
     <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp">
     <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>HELYFY</title>
 </head>
@@ -140,11 +139,12 @@
 
                 <hr class="block-photo-hr">
             </div>
-            <div class="block-photo-video">
-                <div>
-                    <img src="img/photo/photo-player.jpg" alt="">
+            <div class="block-video">
+                <a id="playBtn" class="youtube-btn"></a>
+                <img id="video-preview" src="img/photo/photo-player.jpg" alt="">
+                <div id="player-block" class="youtube-player">
+                    <iframe id="Yplayer" src="https://www.youtube.com/embed/UALhvLWsdZE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="block-photo-video-btn"></div>
             </div>
         </div>
     </div>
@@ -153,7 +153,7 @@
 <div class="block-photo-gallery">
     <div class="wrap">
         <p class="block-photo-gallery-title">Фотографии пакета:</p>
-        <div class="photo-gallery-item">
+        <div class="photo-gallery-item slider">
             <img class="photo-gallery photo-hidden" src="img/photo/01.jpg" alt="">
             <img class="photo-gallery photo-hidden" src="img/photo/02.jpg" alt="">
             <img class="photo-gallery photo-hidden" src="img/photo/03.jpg" alt="">
@@ -451,9 +451,8 @@
         </div>
     </div>
 </footer> <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="js/air-datepicker.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=7eb8dc71-1236-4389-be6d-c83deeb49c9f" type="text/javascript"></script>
-<script type="module" src="js/libs.min.js" type="text/javascript"></script>
+<script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>

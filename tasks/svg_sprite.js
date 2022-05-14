@@ -5,7 +5,7 @@ const {
 const svgmin = require('gulp-svgmin');
 const sprite = require('gulp-svg-sprite');
 
-module.exports = function svg_sprite() {
+module.exports = async function svg_sprite() {
 	return src('src/svg/**/*.svg')
 		.pipe(svgmin({
 			plugins: [{

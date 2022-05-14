@@ -1,13 +1,13 @@
 const bs = require('browser-sync');
 
 module.exports = function bs_php() {
-	bs.init({
-		browser: ['chrome'],
-		watch: true,
-		proxy: '',
-		logLevel: 'info',
-		logPrefix: 'BS-PHP:',
-		logConnections: true,
-		logFileChanges: true,
-	})
+    bs.init({
+        browser: ['opera'], // возможные варианты ['chrome'] ['firefox'] ['opera'] ['google-chrome-stable'] или массив ['opera','firefox', 'vivaldi']
+        watch: true,
+        proxy: '',
+        logLevel: 'info',
+        logPrefix: 'BS-PHP:',
+        logConnections: true,
+        logFileChanges: true,
+    })
 }
