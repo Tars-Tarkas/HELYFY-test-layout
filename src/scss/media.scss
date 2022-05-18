@@ -1,0 +1,61 @@
+@media (max-width: 320px) {
+    .block-video {
+        img {
+            width: 290px;
+            height: 197px;
+        }
+        .youtube-btn {
+            top: 161px;
+            right: 19px;
+            border-top: 10px solid transparent;
+            border-left: 15px solid #ffffff;
+            border-bottom: 10px solid transparent;
+            transition: .2s all;
+        }
+        .youtube-player {
+            width: 290px;
+            height: 197px;
+        }
+    }
+    .modal {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 290px;
+    }
+    .card-data-cvv {
+        display: block;
+    }
+    .input-card-data,
+    .input-card-cvv {
+        max-width: 100%;
+    }
+    .reviews-block-item>img {
+        width: 84px;
+        height: 84px;
+    }
+    .main-page .main-page-title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .button-booking {
+        width: 275px;
+    }
+    .block-photo-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 481px) {
+    .block-photo-gallery-show-more {
+        display: none;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-block-content {
+        justify-content: center;
+    }
+}

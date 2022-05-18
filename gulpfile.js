@@ -3,6 +3,9 @@ const requireDir = require('require-dir');
 const tasks = requireDir('./tasks');
 const sass = require('gulp-sass')(require('sass'));
 
+const ghPages = require('gh-pages');
+const pth = require('path');
+
 exports.libs_style = tasks.libs_style;
 exports.svg_css = tasks.svg_css;
 exports.fonts = tasks.fonts;
@@ -23,34 +26,39 @@ exports.watch = tasks.watch;
 exports.deploy = tasks.deploy;
 
 exports.default = gulp.parallel(
-  exports.libs_style,
-  exports.svg_css,
-  exports.ttf,
-  exports.ttf2,
-  exports.fonts,
-  exports.style,
-  exports.libs_js,
-  exports.dev_js,
-  exports.rastr,
-  exports.webp,
-  exports.svg_sprite,
-  exports.html,
-  exports.bs_html,
-  exports.watch
+    exports.libs_style,
+    exports.svg_css,
+    exports.ttf,
+    exports.ttf2,
+    exports.fonts,
+    exports.style,
+    exports.libs_js,
+    exports.dev_js,
+    exports.rastr,
+    exports.webp,
+    exports.svg_sprite,
+    exports.html,
+    exports.bs_html,
+    exports.watch
 )
 exports.dev_php = gulp.parallel(
-  exports.libs_style,
-  exports.svg_css,
-  exports.ttf,
-  exports.ttf2,
-  exports.fonts,
-  exports.style,
-  exports.libs_js,
-  exports.dev_js,
-  exports.rastr,
-  exports.webp,
-  exports.svg_sprite,
-  exports.php,
-  exports.bs_php,
-  exports.watch
+    exports.libs_style,
+    exports.svg_css,
+    exports.ttf,
+    exports.ttf2,
+    exports.fonts,
+    exports.style,
+    exports.libs_js,
+    exports.dev_js,
+    exports.rastr,
+    exports.webp,
+    exports.svg_sprite,
+    exports.php,
+    exports.bs_php,
+    exports.watch
 )
+
+function deploy(cb) {
+    ghPages.publish(pth.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;

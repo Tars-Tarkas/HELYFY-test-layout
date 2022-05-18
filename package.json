@@ -8,7 +8,8 @@
         "php": "gulp dev_php",
         "build": "gulp libs_style && gulp svg_css && gulp ttf && gulp fonts && gulp style && gulp libs_js && gulp build_js && gulp rastr && gulp webp && gulp svg_sprite && gulp html && gulp php",
         "ftp": "gulp deploy",
-        "build-ftp": "npm run build && npm run ftp"
+        "build-ftp": "npm run build && npm run ftp",
+        "deploy": "gh-pages -d build"
     },
     "author": "",
     "license": "ISC",

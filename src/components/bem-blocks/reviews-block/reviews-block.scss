@@ -6,10 +6,17 @@
     height: 40px;
 }
 
+.reviews-block-fr {
+    display: block;
+}
+
 .reviews-block-item {
-    margin-top: 30px;
-    max-width: 655px;
     display: flex;
+    margin-bottom: 17px;
+}
+
+.reviews-img {
+    padding-right: 22px;
     img {
         width: 101px;
         height: 101px;
@@ -17,7 +24,6 @@
 }
 
 .reviews-block-description {
-    padding-left: 20px;
     .reviews-fio {
         font-weight: 500;
         font-size: 18px;
@@ -31,20 +37,6 @@
         line-height: 21px;
         color: $title;
         margin-bottom: 17px;
-    }
-    .reviews-text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: $title;
-        margin-bottom: 22px;
-    }
-    .reviews-date {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 21px;
-        color: $grey;
-        margin-bottom: 35px;
     }
 }
 
@@ -75,6 +67,28 @@
         font-size: 14px;
         line-height: 21px;
         color: $grey;
+    }
+}
+
+.reviews-block-text {
+    max-width: 710px;
+    padding-left: 122px;
+    .reviews-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $title;
+        margin-bottom: 22px;
+    }
+    .reviews-date {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: $grey;
+    }
+    >hr {
+        margin-top: 35px;
+        margin-bottom: 30px;
     }
 }
 

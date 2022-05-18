@@ -2,6 +2,7 @@
 @import 'global/*.scss';
 @import '**/_*.scss';
 @import '../components/**/*.scss';
+@import 'media.scss';
 .wrap {
     max-width: 1175px;
     width: 100%;
@@ -14,4 +15,10 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
+}
+
+hr {
+    height: 0.5px;
+    border: none;
+    background-color: $grey;
 }
